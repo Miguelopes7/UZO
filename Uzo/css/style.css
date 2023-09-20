@@ -1,0 +1,2564 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --dl-space-space-halfunit: 8px;
+    --dl-space-space-unit: 16px;
+    --dl-space-space-oneandhalfunits: 24px;
+    --dl-space-space-twounits: 32px;
+    --dl-space-space-threeunits: 48px;
+    --dl-space-space-fourunits: 64px;
+    --dl-space-space-fiveunits: 80px;
+    --dl-space-space-sixunits: 96px;
+
+    --dl-size-size-xsmall: 16px;
+    --dl-size-size-maxwidth: 1328px;
+
+    --dl-color-gray-black: #000000;
+    --dl-color-gray-white: #FFFFFF;
+    --dl-color-gray-700: #999999;
+    --dl-color-yelow-uzo:#D8E000;
+    --dl-color-purple-uzo:#7500C8;
+    --dl-color-darkblue-uzo:#1040B1;
+    --dl-color-lightblue-uzo:#00D9DE;
+    --dl-color-pink-uzo:#f70076;
+    --bs-link-color-rgb: #000000;
+    --bs-link-hover-color: #D8E000;
+    --bs-link-hover-color-rgb: rgb(216, 224, 0);
+}
+::selection{
+  background-color: var(--dl-color-darkblue-uzo);
+  color: var(--dl-color-gray-white);
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+.teleport-show{
+  display: flex !important;
+  transform: translateX(0%) !important;
+}
+
+.nav-links-links {
+    gap: var(--dl-space-space-twounits);
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    & a{
+      border: solid 10px #FFFFFF;
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+    & a:hover{
+      border: solid 10px #D8E000;
+      border-radius: 50px;
+      background-color: #D8E000;
+      transition: 0.5s;
+    }
+  }
+  .nav-links-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  @media(max-width: 767px) {
+    .nav-links-links {
+      display: none;
+    }
+  }
+  
+  .home-container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-color: #61616B;
+  }
+  
+  .navbar-interactive {
+    width: 100%;
+    display: flex;
+    position: relative;
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .branding {
+    flex: 1;
+    width: 433px;
+    height: 97px;
+    display: flex;
+    max-width: 640px;
+    align-items: flex-start;
+    border-color: #61616B;
+    border-style: hidden;
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-twounits);
+    justify-content: flex-start;
+    border-bottom-width: 1px;
+  }
+  .logo {
+    width: 136px;
+    height: 57px;
+    object-fit: cover;
+  }
+  .desktop-menu {
+    display: flex;
+  }
+  .nav-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .nav-right {
+    gap: var(--dl-space-space-twounits);
+    height: 105px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .nav-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-work-with-us {
+    cursor: pointer;
+    transition: 0.3s;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+    border-style: hidden;
+
+    & a{
+      text-decoration: none;
+    }
+  }
+  .nav-work-with-us:hover {
+    opacity: 0.5;
+  }
+  .nav-b1, .nav-b3 {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav-burger-img, .nav-burger-img1{
+    width: 100px;
+    display: none;
+    object-fit: cover;
+  }
+  .nav-burger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-work-with-us1 {
+    cursor: pointer;
+    transition: 0.3s;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+    border-style: hidden;
+    & a{
+      text-decoration: none;
+    }
+  }
+  .nav-work-with-us1:hover {
+    opacity: 0.5;
+  }
+  .nav-b2 {
+    display: flex;
+    font-size: 24px;
+  }
+  .nav-mobile-menu {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 32px;
+    z-index: 200;
+    position: fixed;
+    transform: translateX(100%);
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .nav-nav1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-threeunits);
+    justify-content: space-between;
+  }
+  .nav-menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-icon {
+    width: var(--dl-size-size-xsmall);
+    height: var(--dl-size-size-xsmall);
+    cursor: pointer;
+  }
+  .nav-middle {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav-menu-links {
+    gap: var(--dl-space-space-twounits);
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-twounits);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 10px #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;    
+  }
+  .nav-menu-link:hover{
+    border: solid 10px #D8E000;
+    border-radius: 50px;
+    background-color: #D8E000;
+    transition: 0.5s;
+  }
+  .nav-work-with-us2 {
+    cursor: pointer;
+    transition: 0.3s;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+    border-style: hidden;
+    text-decoration: none;
+    & a{
+      text-decoration: none;
+    }
+  }
+
+  .nav-work-with-us2:hover {
+    opacity: 0.5;
+  }
+
+  .container-xxl{
+    align-items: center;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .carousel{
+    max-width: var(--dl-size-size-maxwidth);
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+  }
+
+  .carousel-control-prev {
+    justify-content: flex-start;
+  }
+
+  .carousel-control-next {
+    justify-content: flex-end;
+  }
+
+  .carousel-caption{
+    color: var(--dl-color-gray-white);
+    text-align: left;
+    z-index: 100;
+    top: 50% !important;
+    left: 5%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+
+  .carousel-caption h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .carousel-caption p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .carousel-caption a{
+    display: inline-block;
+    text-decoration: none;
+    border: var(--dl-color-gray-white) solid 2px;
+    border-radius: 50px;
+    margin-top: var(--dl-space-space-halfunit);
+    padding: var(--dl-space-space-halfunit) var(--dl-space-space-unit) var(--dl-space-space-halfunit) var(--dl-space-space-unit);
+    text-align: center;
+  }
+  .carousel-caption a:hover{
+    background-color: var(--dl-color-gray-white);
+    color: var(--dl-color-gray-black);
+  }
+  .home-image04 {
+    width: 640px;
+    height: 540px;
+    object-fit: cover;
+  }
+  .home-who {
+    gap: 120px;
+    width: 100%;
+    height: 221px;
+    display: flex;
+    max-width: var(--dl-size-size-maxwidth);
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home-header {
+    gap: var(--dl-space-space-threeunits);
+    width: auto;
+    height: 225px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-heading {
+    gap: var(--dl-space-space-threeunits);
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-text03 {
+    color: var(--dl-color-gray-black);
+    width: 80%;
+    display: flex;
+    font-size: 40px;
+    max-width: 810px;
+    align-self: center;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+  }
+  .home-navlink {
+    font-size: 24px;
+    align-self: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-unit);
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--dl-color-yelow-uzo);
+  }
+  .home-pricing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dl-color-gray-white);
+  }
+  .home-container1 {
+    width: 100%;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .home-container2 {
+    flex: 2;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .home-container3 {
+    flex: 1;
+    height: 450px;
+    display: flex;
+    max-width: 450px;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-twounits);
+    /* margin-right: var(--dl-space-space-twounits); */
+    
+    margin-right: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-twounits);
+    background-color: var(--dl-color-purple-uzo);
+  }
+  .home-container3:hover {
+    transform: scale(1.02);
+  }
+  .home-image05 {
+    width: 188px;
+    height: 40%;
+    object-fit: cover;
+  }
+  .home-text04 {
+    color: var(--dl-color-gray-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    text-transform: uppercase;
+  }
+  .home-text07 {
+    color: var(--dl-color-gray-white);
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-button1 {
+    color: var(--dl-color-gray-black);
+    margin-top: auto;
+    padding-top: var(--dl-space-space-unit);
+    border-width: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+  }
+  .home-container4 {
+    flex: 1;
+    height: 450px;
+    display: flex;
+    max-width: 450px;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-twounits);
+    /* margin-right: var(--dl-space-space-twounits); */
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-twounits);
+    background-color: var(--dl-color-darkblue-uzo);
+    margin-right: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+  }
+  .home-container4:hover {
+    transform: scale(1.02);
+  }
+  .home-image06 {
+    width: 188px;
+    height: 50%;
+    object-fit: cover;
+  }
+  .home-text11 {
+    color: var(--dl-color-gray-white);
+    font-size: 1.5rem;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    text-transform: uppercase;
+  }
+  .home-text12 {
+    color: var(--dl-color-gray-white);
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-button2 {
+    color: var(--dl-color-gray-black);
+    margin-top: auto;
+    padding-top: var(--dl-space-space-unit);
+    border-width: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+  }
+  .home-container5 {
+    flex: 1;
+    color: var(--dl-color-gray-white);
+    height: 450px;
+    display: flex;
+    max-width: 450px;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-twounits);
+    background-color: var(--dl-color-lightblue-uzo);
+    margin-right: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+  }
+  .home-container5:hover {
+    transform: scale(1.02);
+  }
+  .home-image07 {
+    width: 188px;
+    height: 50%;
+    object-fit: cover;
+  }
+  .home-text13 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    text-transform: uppercase;
+  }
+  .home-text17 {
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-button3 {
+    color: var(--dl-color-gray-black);
+    margin-top: auto;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+    border-style: hidden;
+  }
+  .home-book {
+    width: 100%;
+    height: 538px;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-fiveunits);
+    background-color: var(--dl-color-yelow-uzo);
+  }
+  .home-content {
+    width: 100%;
+    display: flex;
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home-left {
+    gap: var(--dl-space-space-threeunits);
+    width: 100%;
+    display: flex;
+    max-width: 810px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .home-text18 {
+    font-size: 50px;
+    align-self: center;
+    text-align: center;
+    font-weight: initial;
+    line-height: 65px;
+  }
+  .home-container6 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-navlink1 {
+    color: rgb(255, 255, 255);
+    width: 321px;
+    height: 68px;
+    font-size: 24px;
+    align-self: center;
+    margin-left: var(--dl-space-space-halfunit);
+    padding-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    border-radius: 70px;
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-unit);
+    text-transform: lowercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+  }
+  .home-text19 {
+    text-transform: uppercase;
+  }
+  .home-text20 {
+    text-transform: uppercase;
+  }
+  .home-image08 {
+    height: 350px;
+    object-fit: cover;
+  }
+  .home-vantagens-uzo {
+    width: 100%;
+    height: 471px;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .home-column {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .home-row {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-row1 {
+    gap: var(--dl-space-space-threeunits);
+    width: 100%;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-stat {
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+  }
+  .home-image09, .home-image10, .home-image11{
+    width: 200px;
+    object-fit: cover;
+  }
+  .home-text22, .home-text27, .home-text32 {
+    font-size: 1.15rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .home-text23, .home-text28, .home-text33 {
+    color: var(--dl-color-gray-700);
+    font-size: 0.75rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .home-stat1, .home-stat2 {
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    max-width: auto;
+    align-items: flex-start;
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-fiveunits);
+    background-color: var(--dl-color-lightblue-uzo);
+  }
+  .footer-content {
+    gap: var(--dl-space-space-fiveunits);
+    width: 100%;
+    height: 428px;
+    display: flex;
+    max-width: var(--dl-size-size-maxwidth);
+    align-self: center;
+    align-items: center;
+    padding-top: var(--dl-space-space-threeunits);
+    border-style: none;
+    flex-direction: row;
+    padding-bottom: 52px;
+    justify-content: flex-start;
+  }
+  .footer-container {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
+
+  .footer-links-row {
+    gap: 128px;
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .footer-links-column {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    & a{
+      text-decoration: none;
+    }
+  }
+  .footer-links-column1 {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  } 
+  .footer-links-column2 {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-h-text1 {
+    font-style: normal;
+    font-weight: 700;
+  }
+  .footer-h-text2 {
+    font-style: normal;
+    font-weight: 700;
+  }
+  .footer-h-text3 {
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .footer-list-link {
+    color: rgb(39, 39, 45);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    line-height: 32px;
+  }
+  .footer-list-link:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-lists-row {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    list-style-type: none;
+    list-style-position: outside;
+
+    & a{
+      text-decoration: none;
+    }
+  }
+  .footer-li {
+    padding-left: 20px;
+  }
+  .footer-li1 {
+    margin-left: 100px;
+  }
+
+  .mensagem-container{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    & h1, h2{
+      display: block;
+      margin-bottom: var(--dl-space-space-threeunits);
+    }
+
+    & .btn{
+      margin-top: var(--dl-space-space-twounits);
+
+      cursor: pointer;
+      transition: 0.3s;
+      color: var(--dl-color-gray-black);
+      padding-top: var(--dl-space-space-unit);
+      padding-left: var(--dl-space-space-oneandhalfunits);
+      border-radius: 70px;
+      padding-right: var(--dl-space-space-oneandhalfunits);
+      padding-bottom: var(--dl-space-space-unit);
+      background-color: var(--dl-color-yelow-uzo);
+      border-style: hidden;
+    }
+    & .btn:hover{
+      opacity: 0.5;
+    }
+  }
+  
+  @media(max-width: 991px) {
+    body{
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .navbar-interactive {
+      gap: var(--dl-space-space-fourunits);
+      width: 100%;
+      justify-content: center;
+    }
+    .desktop-menu {
+      display: none;
+    }
+    .nav-b1, .nav-b3 {
+      line-height: 30px;
+    }
+    .nav-burger-menu {
+      display: flex;
+    }
+    .nav-work-with-us1 {
+      background-color: var(--dl-color-yelow-uzo);
+    }
+    .nav-b2 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .nav-menu-link {
+      text-transform: uppercase;
+    }
+    .home-who {
+      gap: var(--dl-space-space-fourunits);
+      height: 210px;
+      align-self: center;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+    .home-header {
+      gap: var(--dl-space-space-oneandhalfunits);
+      width: auto;
+      align-self: center;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .home-heading {
+      width: 100%;
+      gap: var(--dl-space-space-unit);
+    }
+    .home-text03 {
+      color: var(--dl-color-gray-black);
+      width: 100%;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      justify-content: center;
+    }
+    .home-navlink {
+      font-size: 16px;
+    }
+    .home-container1 {
+      align-items: center;
+    }
+    .home-book {
+      height: 526px;
+      padding-top: var(--dl-space-space-threeunits);
+      padding-bottom: var(--dl-space-space-fourunits);
+    }
+    .home-content {
+      gap: var(--dl-space-space-oneandhalfunits);
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .home-left {
+      gap: var(--dl-space-space-oneandhalfunits);
+      align-items: center;
+    }
+    .home-text18 {
+      font-size: 32px;
+      text-align: center;
+      line-height: 38px;
+    }
+    .home-container6 {
+      width: auto;
+    }
+    .home-text19, .home-text20 {
+      font-size: 16px;
+    }
+    .home-image08 {
+      height: 220px;
+    }
+    .home-column {
+      height: 1000px;
+      margin-right: 0px;
+    }
+    .footer {
+      height: 1150px;
+      padding-top: var(--dl-space-space-fourunits);
+      padding-left: var(--dl-space-space-oneandhalfunits);
+      margin-bottom: 0px;
+      padding-right: var(--dl-space-space-oneandhalfunits);
+      padding-bottom: var(--dl-space-space-threeunits);
+    }
+    .footer-content {
+      gap: var(--dl-space-space-threeunits);
+      height: 966px;
+      align-items: flex-start;
+      padding-top: var(--dl-space-space-threeunits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-threeunits);
+    }
+    .footer-links-row {
+      gap: var(--dl-space-space-oneandhalfunits);
+      flex-direction: column;
+    }
+    .footer-links-column{
+      width: 100%;
+    }
+    .footer-links-column1 {
+      margin-left: 20px;
+      width: 100%;
+    }
+    .footer-links-column2 {
+      margin-left: 20px;
+      width: 100%;
+    }
+    .footer-li {
+      padding-left: 50px;
+    }
+    .footer-li1, .home-li2, .home-li3, .home-li4 {
+      margin-left: 50px;
+    }
+    .carousel-caption h1 {
+      font-size: 25px;
+    }
+
+    .carousel-caption p {  
+      font-size: 20px;
+    }
+
+    .carousel-caption a{
+      font-size: 10px;
+    }
+  }
+  @media(max-width: 880px) {
+    body{
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .navbar-interactive {
+      width: 100%;
+      padding-top: var(--dl-space-space-twounits);
+      justify-content: space-between;
+    }
+    .nav-work-with-us {
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+    }
+    .nav-b1, .nav-b2 {
+      display: none;
+    }
+    .nav-burger-img {
+      width: 16px;
+      height: 14px;
+      display: flex;
+    }
+    .nav-burger-menu {
+      align-self: flex-start;
+    }
+    .nav-work-with-us1 {
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      background-color: var(--dl-color-yelow-uzo);
+    }
+    .nav-work-with-us2 {
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      border-style: hidden;
+    }
+    .nav-burger-img1 {
+      width: 16px;
+      height: 14px;
+      display: none;
+    }
+    .home-image04 {
+      width: auto;
+      height: 220px;
+    }
+    .home-who {
+      height: 159px;
+      padding-left: 0px;
+      margin-bottom: 0px;
+    }
+    .home-header {
+      width: 100%;
+      height: 168px;
+      align-self: center;
+    }
+    .home-text03 {
+      font-size: 24px;
+      text-align: left;
+      justify-content: center;
+    }
+    .home-container1 {
+      /* padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits); */
+      width: 100%;
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .home-container2 {
+      flex-direction: column;
+    }
+    .home-container3 {
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: var(--dl-space-space-twounits);
+    }
+    .home-container4 {
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: var(--dl-space-space-twounits);
+    }
+    .home-container5 {
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .home-book {
+      height: 580px;
+    }
+    .home-container6 {
+      height: 137px;
+      flex-direction: column;
+    }
+    .home-navlink1 {
+      margin-top: var(--dl-space-space-halfunit);
+      margin-bottom: var(--dl-space-space-halfunit);
+    }
+    .home-vantagens-uzo {
+      height: 1018px;
+    }
+    .home-column {
+      height: 900;
+    }
+    .home-row1 {
+      gap: var(--dl-space-space-fourunits);
+      height: 789px;
+      align-self: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .home-stat {
+      padding: var(--dl-space-space-unit);
+    }
+    .home-text22, .home-text27, .home-text32 {
+      text-align: center;
+    }
+    .home-stat1, .home-stat2 {
+      padding: var(--dl-space-space-unit);
+    }
+    .footer-links-column2 {
+      padding-left: 0px;
+    }
+    .footer-lists-row {
+      gap: var(--dl-space-space-halfunit);
+      width: 100%;
+      height: 123px;
+      align-self: flex-start;
+      margin-top: var(--dl-space-space-twounits);
+      align-items: center;
+      margin-right: 0px;
+      padding-left: 0px;
+      flex-direction: column;
+    }
+    .footer-li  {
+      padding-left: 20px;
+      margin-left: -50px;
+    }
+    .footer-li1  {
+      margin-left: -20px;
+    }
+
+    .carousel-caption h1 {
+      font-size: 20px;
+    }
+
+    .carousel-caption p {
+      font-size: 15px;
+    }
+
+    .carousel-caption a{
+      font-size: 8px;
+    }
+  }
+  @media(max-width: 479px) {
+    body{
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .navbar-interactive {
+      width: 100%;
+      max-width: var(--dl-size-size-maxwidth);
+    }
+    .nav-mobile-menu {
+      padding: 16px;
+    }
+    .nav-b3 {
+      display: flex;
+    }
+    .nav-burger-img1 {
+      display: none;
+    }
+    .home-header {
+      align-self: center;
+    }
+    .home-text03 {
+      font-size: 18px;
+      font-style: normal;
+      text-align: center;
+      font-weight: 400;
+      justify-content: center;
+    }
+    .home-container1 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .home-book {
+      height: 600px;
+    }
+    .home-text18 {
+      height: 72px;
+      font-size: 28px;
+    }
+    .home-container6 {
+      height: 144px;
+      flex-direction: column;
+    }
+    .home-navlink1 {
+      margin-top: var(--dl-space-space-halfunit);
+      margin-bottom: var(--dl-space-space-halfunit);
+    }
+    .home-vantagens-uzo {
+      height: 1018px;
+      align-items: center;
+      padding-top: var(--dl-space-space-twounits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .home-column {
+      height: 1000px;
+    }
+    .home-row1 {
+      height: 772px;
+      align-self: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .footer {
+      height: 1245px;
+    }
+    .footer-content {
+      height: 1045px;
+    }
+
+    .carousel-caption h1 {
+      font-size: 12px;
+      left: 3%;
+    }
+
+    .carousel-caption p {
+      font-size: 10px;
+      /* left: 3%; */
+    }
+
+    .carousel-caption a{
+      font-size: 8px;
+      padding: 4px var(--dl-space-space-halfunit) 4px var(--dl-space-space-halfunit);
+      border-width: 1px;
+    }
+  }
+
+
+
+
+
+  :root {
+  --dl-size-size-small: 48px;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-space-space-unit: 16px;
+  --dl-size-size-maxwidth: 1328px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-twounits: 32px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}  
+  body{
+    overflow-x: hidden;
+  }
+  .tarifrios-container01 {
+    width: 100%;
+    height: 337px;
+    display: flex;
+    position: relative;
+    max-width: var(--dl-size-size-maxwidth);
+    align-self: flex-start;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-image:url("../public/external/Picturecampanhaveraouzoreduzidoxlwebp1445-g0th.png");
+    background-position: center;
+  } 
+  .tarifrios-text03 {
+    color: var(--dl-color-gray-white);
+    right: 71px;
+    bottom: 110px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    font-size: 20px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 800;
+  }
+  .tarifrios-text06 {
+    top: 141px;
+    color: var(--dl-color-gray-white);
+    right: 66px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    font-size: 35px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 800;
+  }
+  .tarifrios-pricing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #CCCCCC;
+  }
+  .tarifrios-container02 {
+    width: 100%;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    justify-content: center;
+  }
+  .tarifrios-pricing-card {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    max-width: 450px;
+    min-height: 450px;
+    transition: 0.3s;
+    align-items: flex-start;
+    margin-right: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-twounits);
+    justify-content: space-between;
+    background-color: var(--dl-color-gray-white);
+  }
+  .tarifrios-pricing-card:hover {
+    transform: scale(1.02);
+  }
+  .tarifrios-text070 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-halfunit);
+    text-transform: uppercase;
+
+      color: #FFFFFF;
+      background-color: var(--dl-color-purple-uzo);
+      border-radius: 0rem;
+      -webkit-border-radius: 0rem;
+      -moz-border-radius: 0rem;
+      padding: 0.375rem 1rem;
+      margin-top: 10px;
+      margin-left: -45px;
+      border-style: none;
+      border-width: 0rem;
+      border-color: var(--dl-color-purple-uzo);
+  }
+  .tarifrios-text071 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-halfunit);
+    text-transform: uppercase;
+
+      color: #FFFFFF;
+      background-color: var(--dl-color-pink-uzo);
+      border-radius: 0rem;
+      -webkit-border-radius: 0rem;
+      -moz-border-radius: 0rem;
+      padding: 0.375rem 1rem;
+      margin-top: 10px;
+      margin-left: -45px;
+      border-style: none;
+      border-width: 0rem;
+      border-color: var(--dl-color-pink-uzo);
+  }
+  .tarifrios-text072 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-halfunit);
+    text-transform: uppercase;
+  }
+  
+  .tarifrios-container03 {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-halfunit);
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(105, 105, 105, 0.087);
+  }
+  .tarifrios-text08 {
+    font-size: 1.15rem;
+    margin-top: var(--dl-space-space-twounits);
+    font-weight: 300;
+  }
+  .tarifrios-text09 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .tarifrios-text10 {
+    font-size: 1.15rem;
+    font-style: normal;
+    margin-top: var(--dl-space-space-twounits);
+    font-weight: 300;
+  }
+  .tarifrios-text11 {
+    color: var(--dl-color-purple-uzo);
+    font-size: 0.75rem;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-container04 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    width: 100%;
+  }
+  .tarifrios-container05 {
+    height: 148px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
+  .tarifrios-text14 {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text15 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text17 {
+    color: var(--dl-color-gray-black);
+    text-decoration: line-through;
+  }
+  .tarifrios-text18 {
+    margin-top: var(--dl-space-space-unit);
+  }
+  .oferta{
+    background-color: var(--dl-color-pink-uzo);
+    color: var(--dl-color-gray-white);
+    padding: 2px;
+  }
+  .tarifrios-container06 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .tarifrios-text19 {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .tarifrios-button1 {
+    color: var(--dl-color-gray-black);
+    font-weight: 600;
+    align-self: center;
+    margin-top: -50px;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
+    background-color: var(--dl-color-yelow-uzo);
+    border: none;
+    transition: 0.5s;
+  }
+  .tarifrios-button1:hover {
+    border-radius: 50px;
+    transition: 0.7s;
+  }
+  .tarifrios-container10 {
+    width: 276px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .tarifrios-container11 {
+    display: flex;
+    margin-top: var(--dl-space-space-fourunits);
+    align-items: center;
+    margin-bottom: var(--dl-space-space-twounits);
+    flex-direction: row;
+  }
+  .tarifrios-container12 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+  .tarifrios-container13 {
+    width: 269px;
+    height: 45px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .tarifrios-container14 {
+    width: 276px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .tarifrios-text40 {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-steps {
+    width: 100%;
+    height: 409px;
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D8E000;
+  }
+  .tarifrios-container15 {
+    width: 100%;
+    height: 356px;
+    display: flex;
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarifrios-container16 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarifrios-text41 {
+    color: var(--dl-color-gray-black);
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .tarifrios-container17 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .tarifrios-step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-container18 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tarifrios-circulo {
+    flex: 0 0 auto;
+    width: var(--dl-size-size-small);
+    height: var(--dl-size-size-small);
+    display: flex;
+    align-items: center;
+    border-radius: var(--dl-radius-radius-round);
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--dl-color-gray-white);
+  }
+  .tarifrios-icon02 {
+    fill: var(--dl-color-gray-500);
+    width: 24px;
+    height: 24px;
+  }
+  .tarifrios-picture {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 45.25px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .tarifrios-icons-img {
+    width: 290px;
+    height: 50px;
+  }
+  .tarifrios-container20 {
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text42 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text43 {
+    color: var(--dl-color-gray-500);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .tarifrios-step1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-container21 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tarifrios-icon04 {
+    fill: var(--dl-color-gray-500);
+    width: 24px;
+    height: 24px;
+  }
+  .tarifrios-container23 {
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text44 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text45 {
+    color: var(--dl-color-gray-500);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .tarifrios-step2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-container24 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tarifrios-icon06 {
+    fill: var(--dl-color-gray-500);
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+  .tarifrios-container26 {
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text48 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text49 {
+    color: var(--dl-color-gray-500);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .tarifrios-step3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-container27 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tarifrios-icon09 {
+    fill: var(--dl-color-gray-500);
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+  .tarifrios-container29 {
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text52 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-text53 {
+    color: var(--dl-color-gray-500);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .tarifrios-vantagens-uzo {
+    width: 100%;
+    height: 471px;
+    display: flex;
+    padding: var(--dl-space-space-threeunits);
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .tarifrios-column {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarifrios-row {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarifrios-text54 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .tarifrios-row1 {
+    width: 100%;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarifrios-stat {
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-image4 {
+    width: 200px;
+    object-fit: cover;
+  }
+  .tarifrios-text55 {
+    font-size: 1.5rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .tarifrios-text56 {
+    color: var(--dl-color-gray-700);
+    font-size: 0.75rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .tarifrios-stat1 {
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-image5 {
+    width: 200px;
+    object-fit: cover;
+  }
+  .tarifrios-text57 {
+    font-size: 1.5rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .tarifrios-text58 {
+    color: var(--dl-color-gray-700);
+    font-size: 0.75rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .tarifrios-stat2 {
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarifrios-image6 {
+    width: 200px;
+    object-fit: cover;
+  }
+  .tarifrios-text59 {
+    font-size: 1.5rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+  .tarifrios-text60 {
+    color: var(--dl-color-gray-700);
+    font-size: 0.75rem;
+    margin-top: var(--dl-space-space-halfunit);
+    text-align: center;
+  }
+
+  .modal-title{
+    font-weight: 700;
+  }
+  .form-group{
+    padding-bottom: 0.8em;
+  }
+  .form-resumo{
+    margin-top: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    display: block;
+
+    background-color: #00000011;
+    width: 100%; 
+  }
+  .accordion-button:focus {
+    box-shadow: var(--dl-color-yellow-uzo);
+  }
+  .accordion{
+    --bs-accordion-active-bg: var(--dl-color-gray-white);
+  }
+  .accordion-button:not(.collapsed){
+    color: var(--dl-color-gray-black);
+  }
+  .accordion-body  {
+    margin-left: var(--dl-space-space-twounits);
+    margin-right: var(--dl-space-space-twounits);
+
+    & h4{
+      font-weight: 700;
+      margin-bottom: var(--dl-space-space-oneandhalfunits);
+    }
+    & .tarifrios-container04{
+      margin-bottom: 0px;
+      margin-top: 0px;
+      height: auto;
+    }
+    & .tarifrios-container05{
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      height: auto;
+    }
+    & .tarifrios-text14 {
+      display: block;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    & .tarifrios-text15 {
+      display: block;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    & .tarifrios-text17 {
+      display: block;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    & .tarifrios-text18 {
+      display: block;
+      margin-top: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    & .tarifrios-container06{
+      display: block;
+    }
+    & .tarifrios-text19{
+      display: block;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+  }
+  h5{
+    display: block;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  h6{
+    display: block;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .sm2{
+    margin-top: var(--dl-space-space-unit);
+    font-size: 0.7rem;
+  }
+  .form-text01 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+      color: #FFFFFF;
+      background-color: var(--dl-color-purple-uzo);
+      border-radius: 0rem;
+      padding: 0.375rem 1rem;
+      border-style: none;
+      border-width: 0rem;
+      border-color: var(--dl-color-purple-uzo);
+      margin-bottom: var(--dl-space-space-unit);
+  }
+  .form-text02 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+      color: #FFFFFF;
+      background-color: var(--dl-color-pink-uzo);
+      border-radius: 0rem;
+      padding: 0.375rem 1rem;
+      border-style: none;
+      border-width: 0rem;
+      border-color: var(--dl-color-pink-uzo);
+      margin-bottom: var(--dl-space-space-unit);
+  }
+  .form-plafond{
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-unit);
+  }
+  .form-euro{
+    padding-left: var(--dl-space-space-unit);
+    font-weight: 700;
+  }
+  .form-price{
+    font-size: 3rem;
+    margin-top: var(--dl-space-space-twounits);
+    font-weight: 700;
+  }
+  .form-mes{
+    font-weight: 700;
+  }
+  .form-inclui{
+    display: block;
+    padding-left: var(--dl-space-space-unit);
+    font-size: 0.75rem;
+    margin-bottom: -5px;
+  }
+  #validar{
+    height: 55px;;
+  }
+
+  .container-xxl{
+    align-items: center;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+
+  .carousel{
+    max-width: var(--dl-size-size-maxwidth);
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+  }
+  
+  .carousel-caption h1, .carousel-caption p {
+    text-align: left;
+  }
+
+  .carousel-caption{
+    right: 5%;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .bi-question-circle{
+    margin-top: -4px;
+  }
+
+  .tip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tip .tiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--dl-color-darkblue-uzo);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    z-index: 10;
+  }
+
+  .tip:hover .tiptext {
+    visibility: visible;
+    
+  }
+
+  .bi-phone, .bi-wifi{
+    margin-top: -4px;
+  }
+
+  @media(max-width: 991px) {
+    
+    .tarifrios-container01 {
+      width: 100%;
+    }
+    .tarifrios-text03 {
+      right: 50px;
+      bottom: 68px;
+      position: absolute;
+      font-size: 15px;
+      align-self: flex-end;
+    }
+    .tarifrios-text06 {
+      top: 198px;
+      right: 49px;
+      font-size: 25px;
+    }
+    .tarifrios-container02 {
+      flex-flow: column;
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-pricing-card {
+      width: 80%;
+      max-width: 450px;
+      margin-right: 0px;
+      padding: var(--dl-space-space-twounits);
+      margin-bottom: var(--dl-space-space-twounits);
+    }
+    
+    .tarifrios-steps {
+      height: 600px;
+    }
+    .tarifrios-container15 {
+      width: 100%;
+      height: 474px;
+      margin-right: 0px;
+      flex-direction: column;
+    }
+    .tarifrios-text41 {
+      text-align: center;
+    }
+    .tarifrios-container17 {
+      width: 100%;
+      height: 368px;
+      align-items: flex-start;
+      padding-left: var(--dl-space-space-fiveunits);
+      flex-direction: column;
+    }
+    .tarifrios-step {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tarifrios-container18 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tarifrios-container20 {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .tarifrios-text42 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .tarifrios-text43 {
+      color: var(--dl-color-gray-500);
+      text-align: left;
+    }
+    .tarifrios-step1 {
+      flex-direction: row;
+    }
+    .tarifrios-container21 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .tarifrios-container23 {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .tarifrios-text44 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .tarifrios-text45 {
+      color: var(--dl-color-gray-500);
+    }
+    .tarifrios-step2 {
+      flex-direction: row;
+    }
+    .tarifrios-container24 {
+      width: var(--dl-size-size-small);
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tarifrios-container26 {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .tarifrios-text48 {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .tarifrios-text49 {
+      color: var(--dl-color-gray-500);
+      font-size: 0.75rem;
+      text-align: left;
+    }
+    .tarifrios-step3 {
+      flex-direction: row;
+    }
+    .tarifrios-container27 {
+      width: var(--dl-size-size-small);
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tarifrios-container29 {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .tarifrios-text52 {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .tarifrios-text53 {
+      color: var(--dl-color-gray-500);
+      font-size: 0.75rem;
+      text-align: left;
+    }
+    .tarifrios-column {
+      margin-right: 0px;
+    }
+    .carousel-caption h1 {
+      font-size: 22px;
+    }
+
+    .carousel-caption p {
+      font-size: 20px;
+    }
+
+    .carousel-caption{
+      right: 5%;
+    }
+  }
+
+
+  @media(max-width: 767px) {
+
+    .tarifrios-container01 {
+      width: 645px;
+      height: 236px;
+      min-height: var(--dl-size-size-small);
+    }
+    .tarifrios-text03 {
+      right: 46px;
+      bottom: 46px;
+    }
+    .tarifrios-text06 {
+      top: 128px;
+      right: 43px;
+    }
+    .tarifrios-container02 {
+      flex-flow: column;
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-pricing-card {
+      width: 100%;
+      max-width: 450px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-steps {
+      height: 975px;
+      align-self: center;
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-container15 {
+      height: 520px;
+    }
+    .tarifrios-container17 {
+      width: 100%;
+      align-items: flex-start;
+      padding-left: var(--dl-space-space-fiveunits);
+      flex-direction: column;
+    }
+    .tarifrios-step {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tarifrios-container18 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      align-self: stretch;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      flex-direction: column;
+      padding-bottom: 2px;
+      justify-content: center;
+    }
+    .tarifrios-container20 {
+      width: 100%;
+      align-items: flex-start;
+      padding-top: var(--dl-space-space-twounits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+      justify-content: space-between;
+    }
+    .tarifrios-text42 {
+      margin-top: var(--dl-space-space-twounits);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .tarifrios-text43 {
+      text-align: left;
+    }
+    .tarifrios-step1 {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tarifrios-container21 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      align-self: stretch;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      flex-direction: column;
+      padding-bottom: 2px;
+      justify-content: center;
+    }
+    .tarifrios-container23 {
+      width: 100%;
+      align-items: flex-start;
+      padding-top: var(--dl-space-space-twounits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+      justify-content: space-between;
+    }
+    .tarifrios-text44 {
+      margin-top: var(--dl-space-space-twounits);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .tarifrios-text45 {
+      text-align: left;
+    }
+    .tarifrios-step2 {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tarifrios-container24 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      align-self: stretch;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      flex-direction: column;
+      padding-bottom: 2px;
+      justify-content: center;
+    }
+    .tarifrios-container26 {
+      width: 100%;
+      align-items: flex-start;
+      padding-top: var(--dl-space-space-twounits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+      justify-content: space-between;
+    }
+    .tarifrios-text48 {
+      margin-top: var(--dl-space-space-twounits);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .tarifrios-text49 {
+      text-align: left;
+    }
+    .tarifrios-step3 {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tarifrios-container27 {
+      width: var(--dl-size-size-small);
+      height: auto;
+      align-self: stretch;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      flex-direction: column;
+      padding-bottom: 2px;
+      justify-content: center;
+    }
+    .tarifrios-container29 {
+      width: 100%;
+      align-items: flex-start;
+      padding-top: var(--dl-space-space-twounits);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+      justify-content: space-between;
+    }
+    .tarifrios-text52 {
+      margin-top: var(--dl-space-space-twounits);
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .tarifrios-text53 {
+      text-align: left;
+    }
+    .tarifrios-vantagens-uzo {
+      height: 918px;
+      padding-left: 14px;
+      padding-right: 12px;
+    }
+    .tarifrios-column {
+      height: 877px;
+    }
+    .tarifrios-row {
+      align-self: flex-start;
+    }
+    .tarifrios-text54 {
+      text-align: center;
+      max-width: 500px;
+    }
+    .tarifrios-row1 {
+      gap: var(--dl-space-space-fourunits);
+      width: 100%;
+      height: 789px;
+      max-width: var(--dl-size-size-maxwidth);
+      align-self: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tarifrios-stat {
+      padding: var(--dl-space-space-unit);
+    }
+    .tarifrios-text55 {
+      text-align: center;
+    }
+    .tarifrios-stat1 {
+      padding: var(--dl-space-space-unit);
+    }
+    .tarifrios-text57 {
+      text-align: center;
+    }
+    .tarifrios-stat2 {
+      padding: var(--dl-space-space-unit);
+    }
+    .tarifrios-text59 {
+      text-align: center;
+    }
+    .tarifrios-links-column2 {
+      padding-left: 0px;
+    }
+    .tarifrios-li {
+      padding-left: 20px;
+    }
+    .carousel-caption h1 {
+      font-size: 22px;
+    }
+
+    .carousel-caption p {
+      font-size: 20px;
+    }
+    .carousel-caption{
+      right: 5%;
+    }
+    .tarifrios-pricing-card{
+      margin-left: 0px;
+    }
+  }
+  @media(max-width: 479px) {
+    
+    .tarifrios-container01 {
+      width: 374px;
+    }
+    .tarifrios-text03 {
+      z-index: 50;
+    }
+    .tarifrios-text06 {
+      z-index: 50;
+    }
+    .tarifrios-container02 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-steps {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      margin-bottom: 0px;
+      height: 1065px;
+      padding-right: var(--dl-space-space-unit);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-container15 {
+      margin-top: -200px;
+      height: 956px;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .tarifrios-text41 {
+      font-size: 1.5rem;
+    }
+    .tarifrios-container17 {
+      width: 100%;
+      padding-left: 0px;
+    }
+    .tarifrios-container18 {
+      justify-content: center;
+    }
+    .tarifrios-container20 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: 0px;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-text42 {
+      margin-left: 0px;
+      margin-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-container21 {
+      justify-content: center;
+    }
+    .tarifrios-container23 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: 0px;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-text44 {
+      margin-left: 0px;
+      margin-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-container24 {
+      justify-content: center;
+    }
+    .tarifrios-container26 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: 0px;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-text48 {
+      margin-left: 0px;
+      margin-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-container27 {
+      justify-content: center;
+    }
+    .tarifrios-container29 {
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: 0px;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-text52 {
+      margin-left: 0px;
+      margin-right: var(--dl-space-space-twounits);
+    }
+    .tarifrios-vantagens-uzo {
+      height: 1018px;
+      align-items: center;
+      padding-top: var(--dl-space-space-twounits);
+      padding-left: var(--dl-space-space-unit);
+      padding-right: var(--dl-space-space-unit);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .tarifrios-column {
+      width: 100%;
+      height: 956px;
+    }
+    .tarifrios-text54 {
+      font-size: 1.5rem;
+      text-align: center;
+      max-width: 400px;
+    }
+    .tarifrios-row1 {
+      height: 772px;
+      align-self: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tarifrios-stat {
+      margin-right: 0px;
+    }
+    .carousel-caption h1 {
+      font-size: 12px;
+    }
+
+    .carousel-caption p {
+      text-align: right;
+      font-size: 10px;
+    }
+    .carousel-caption{
+      right: 5%;
+    }
+    .tarifrios-text09 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }  
